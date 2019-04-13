@@ -1,0 +1,45 @@
+==23156== Lackey, an example Valgrind tool
+==23156== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote.
+==23156== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==23156== Command: 
+==23156== Parent PID: 5388
+==23156== 
+I  0007C790,2
+ L 0000199C,4
+ S 00014962,1
+I  00022305,2
+I  0000242B,3
+ L 00031950,4
+ L 0000199C,4
+ L 0004199C,4
+I  00022305,2
+ L 00031950,4
+ L 0000199C,4
+ L 00031950,4
+I  00022305,2
+ S 00014962,1
+I  00022305,2
+ L 0000199C,4
+ S 00014962,1
+I  0007C790,2
+ L 0000199C,4
+ S 00014962,1
+==23156== 
+==23156== Counted 1 call to main()
+==23156== 
+==23156== Jccs:
+==23156==   total:         29,444
+==23156==   taken:         14,037 (48%)
+==23156== 
+==23156== Executed:
+==23156==   SBs entered:   29,623
+==23156==   SBs completed: 21,057
+==23156==   guest instrs:  153,077
+==23156==   IRStmts:       903,583
+==23156== 
+==23156== Ratios:
+==23156==   guest instrs : SB entered  = 51 : 10
+==23156==        IRStmts : SB entered  = 305 : 10
+==23156==        IRStmts : guest instr = 59 : 10
+==23156== 
+==23156== Exit code:       0
